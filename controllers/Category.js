@@ -14,7 +14,7 @@ exports.createCategory = async (req, res) => {
                 })
             }
         //create entry in DB
-            const tagDetails = await Tag.create({
+            const tagDetails = await Category.create({
                 name:name,
                 description:description,
             });
